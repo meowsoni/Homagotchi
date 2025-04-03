@@ -18,6 +18,8 @@ The program writes logs to a file and is currently programmed to delete all prev
 
 Although I have not tested, the script should be compatible with all Waveshare EPDs. Just change `WIDTH` and `HEIGHT` properties and redraw the interface using `Pillow` as I have done in the script `hg.py`. Same goes for adding more users; if you have a bigger screen (or happy to sacrifice clock) you can add more faces by adding a line for each user in the script.
 
-Please note the following:
-  a. Homagotchi does not ping users simultaneously but consecutively to avoid SPI lockup when calling for e-Paper display to refresh.
-  b. When you switch on the device, it assumes all users are home, so it may take up to 10 minutes to start showing accurate data.
+**Bear in mind**<br>
+Homagotchi does not ping users simultaneously but consecutively to avoid SPI lockup when calling for e-Paper display to refresh.
+When you switch on the device, it assumes all users are home, so it may take up to 10 minutes to start showing accurate data.
+
+Free to use, without guarantees.
